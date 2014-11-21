@@ -1,0 +1,4 @@
+pendapat :
+- gk user friendly
+- chat loop
+- menu ? menggangu. saran bikin help atau yang peting2 aja.

@@ -1,0 +1,5 @@
+@/pendingMessage.txt
+MSG||jonathan||chrestella||2014-11-20.20:40:22||hallo tut :).||
+MSG||jonathan||chrestella||2014-11-20.20:45:18||halo tut :).||
+MSG||jonathan||chrestella||2014-11-20.20:48:40||halo tut :).||
+MSG||jonathan||chrestella||2014-11-20.20:49:05||halo lagi coba iseng :).||

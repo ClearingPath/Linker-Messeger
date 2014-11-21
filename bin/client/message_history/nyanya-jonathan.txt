@@ -1,0 +1,4 @@
+@nyanya-jonathan.txt
+marker||nyanya||
+MSG||nyanya||jonathan||2014-11-21.12:41:18||sayang||
+MSG||jonathan||nyanya||2014-11-21.12:42:06||halo juga sayang||
