@@ -1,0 +1,16 @@
+@root-jonathan.txt
+MSG||jonathan||root||2014-12-06.18:56:18||1234||
+MSG||jonathan||root||2014-12-06.18:59:06||jonathan||
+MSG||root||jonathan||2014-12-06.18:59:31||12345||
+MSG||root||jonathan||2014-12-06.19:03:20||halo||
+newmsg
+MSG||jonathan||root||2014-12-06.19:03:44||jonathan aku||
+MSG||jonathan||root||2014-12-06.19:10:11||bsjfwe||
+MSG||jonathan||root||2014-12-06.19:10:17||1235||
+MSG||jonathan||root||2014-12-06.19:10:20||12354132||
+MSG||root||jonathan||2014-12-06.19:11:40||okay ?||
+MSG||jonathan||root||2014-12-06.19:14:07||1234||
+MSG||root||jonathan||2014-12-06.19:15:31||1235123||
+MSG||jonathan||root||2014-12-06.19:16:54||i got your message dude||
+MSG||jonathan||root||2014-12-06.19:20:04||1234||
+MSG||root||jonathan||2014-12-06.19:22:20||1234||

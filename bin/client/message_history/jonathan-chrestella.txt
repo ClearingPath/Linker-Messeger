@@ -1,5 +1,21 @@
 @jonathan-chrestella.txt
-marker||jonathan||
-MSG||jonathan||chrestella||2014-11-20.20:48:40||halo tut :).||
-MSG||jonathan||chrestella||2014-11-20.20:49:05||halo lagi coba iseng :).||
-MSG||jonathan||chrestella||2014-11-20.22:52:29||hai||
+MSG||chrestella||jonathan||2014-12-06.10:52:56||pesan 1||
+MSG||chrestella||jonathan||2014-12-06.10:53:01||pesan 2||
+MSG||jonathan||chrestella||2014-12-06.10:54:05||pesan 3||
+MSG||jonathan||chrestella||2014-12-06.14:06:36||halo tutu||
+MSG||jonathan||chrestella||2014-12-06.14:06:50||halo lagi tutut||
+MSG||jonathan||chrestella||2014-12-06.14:09:25||halo lagi nih||
+MSG||jonathan||chrestella||2014-12-06.18:23:26||hi tut||
+MSG||chrestella||jonathan||2014-12-06.18:27:04||hello juga||
+MSG||jonathan||chrestella||2014-12-06.18:30:21||hallo banget tut||
+MSG||jonathan||chrestella||2014-12-06.19:06:10||hallo tut||
+MSG||chrestella||jonathan||2014-12-06.19:27:16||1234||
+MSG||chrestella||jonathan||2014-12-06.20:08:28||halo halo halo||
+MSG||chrestella||jonathan||2014-12-06.20:08:34||pesan 2||
+MSG||chrestella||jonathan||2014-12-06.20:08:41||pesan 3||
+MSG||chrestella||jonathan||2014-12-06.20:11:31||baru banget kirim||
+MSG||chrestella||jonathan||2014-12-06.20:11:47||baru banget kirim lagi||
+MSG||jonathan||chrestella||2014-12-06.20:12:24||udah dapet belom?||
+MSG||chrestella||jonathan||2014-12-06.20:15:44||arjadjasldj||
+MSG||jonathan||chrestella||2014-12-06.20:17:50||tes ||
+newmsg

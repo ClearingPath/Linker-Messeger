@@ -25,6 +25,9 @@
 #include <unistd.h>
 #include <time.h>
 
+#include <stdio.h>
+
+
 #define port 9000
 #define buffer_size 1024
 
@@ -52,4 +55,14 @@ void readChat(string str);
 const std::string currentDateTime();
 void writeExternalFile(string filename,vector<string> message);
 vector<string> readExternalFileAutoCreate(string path);
+void addMarkNewMsg(string path);
+void moveToBottom(string str);
+void readChat2(string str);
+void writeExternalFile2(string filename,string message);
+void messageNotifier();
+void addNotifSender(string user);
+void deleteNotifSender(string user);
+vector<string> readExternalFile(string path);
+void sendMessageHidden(string str,string message);
+void header2();
 #endif

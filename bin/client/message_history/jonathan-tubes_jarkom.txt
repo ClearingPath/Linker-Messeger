@@ -1,0 +1,13 @@
+@jonathan-tubes_jarkom.txt
+MSG||jonathan||tubes_jarkom||2014-12-06.11:37:09||hallo||
+GRP||jonathan||jonathan||2014-12-06.13:38:56||ini testing HARUS BISA!||
+MSG||jonathan||tubes_jarkom||2014-12-06.13:38:56||ini testing HARUS BISA!||
+GRP||jonathan||jonathan||2014-12-06.13:41:49||hai||
+MSG||jonathan||tubes_jarkom||2014-12-06.13:41:49||hai||
+GRP||jonathan||jonathan||2014-12-06.13:41:49||hai||
+MSG||jonathan||tubes_jarkom||2014-12-06.13:47:00||tut lu imba lah~||
+GRP||root||jonathan||2014-12-06.15:33:15||Has leave the group||
+MSG||jonathan||tubes_jarkom||2014-12-06.15:45:07||Has join the group||
+GRP||root||jonathan||2014-12-06.15:50:15||Has join the group||
+GRP||root||jonathan||2014-12-06.15:50:24||Has leave the group||
+newmsg

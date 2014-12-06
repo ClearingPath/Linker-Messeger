@@ -70,4 +70,9 @@ string protocolMaker(vector<string> message);
 string corretFilePath();
 const string currentDateTime();
 void createLog(string str);
+vector<string> readGroupExternalFileAutoCreate(string path);
+vector<string> readGroupExternal(string path);
+vector<string> protocolDissambler2(string message);
+string retGroup (vector<string> group);
+string logMaker(string message);
 #endif

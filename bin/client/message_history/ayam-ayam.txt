@@ -1,0 +1,4 @@
+@ayam-ayam.txt
+newmsg
+MSG||ayam||ayam||2014-12-06.19:42:56||1235||
+MSG||ayam||ayam||2014-12-06.19:42:56||1235||

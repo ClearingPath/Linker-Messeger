@@ -1,0 +1,13 @@
+@chrestella-fauzan.txt
+newmsg
+MSG||chrestella||fauzan||2014-12-06.20:20:29||adasda||
+MSG||fauzan||chrestella||2014-12-06.20:20:46||tes||
+MSG||chrestella||fauzan||2014-12-06.20:21:00||tes lagi||
+MSG||chrestella||fauzan||2014-12-06.20:21:24||asdasd||
+MSG||chrestella||fauzan||2014-12-06.20:21:31||sdadas||
+MSG||chrestella||fauzan||2014-12-06.20:30:23||hai||
+MSG||chrestella||fauzan||2014-12-06.20:30:28||hai lagi||
+MSG||chrestella||fauzan||2014-12-06.20:35:51||hai||
+MSG||chrestella||fauzan||2014-12-06.20:36:07||lol||
+MSG||fauzan||chrestella||2014-12-06.20:36:20||lol||
+MSG||chrestella||fauzan||2014-12-06.20:37:22||adals||

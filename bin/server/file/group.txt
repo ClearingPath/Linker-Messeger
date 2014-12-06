@@ -1,2 +1,4 @@
 @/group.txt
-tubes_jarkom||chrestella||jonathan||fauzan||
+tubes_jarkom||fauzan||chrestella||jonathan||
+dasda||fauzan||
+group||fauzan||

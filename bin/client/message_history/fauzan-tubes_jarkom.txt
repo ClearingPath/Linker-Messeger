@@ -1,0 +1,10 @@
+@fauzan-tubes_jarkom.txt
+GRP||jonathan||fauzan||2014-12-06.13:41:49||hai||
+GRP||jonathan||fauzan||2014-12-06.13:47:00||tut lu imba lah~||
+newmsg
+GRP||root||fauzan||2014-12-06.15:33:15||Has leave the group||
+GRP||jonathan||fauzan||2014-12-06.15:35:01||Has leave the group||
+GRP||jonathan||fauzan||2014-12-06.15:35:07||Has joined the group||
+GRP||jonathan||fauzan||2014-12-06.15:45:07||Has join the group||
+GRP||root||fauzan||2014-12-06.15:50:15||Has join the group||
+GRP||root||fauzan||2014-12-06.15:50:24||Has leave the group||

@@ -18,9 +18,7 @@ int main(){
 
 	active = true;
 
-	string logStart = "[";
-	logStart += currentDateTime();
-	logStart += "]||SERVER_START||";
+	string logStart = "SERVER_START";
 	createLog(logStart);
 
 	pool.push_back(thread(producerToken));
@@ -109,11 +107,7 @@ void clientHandle(int client_sock){
 			else{
 				string temp = buffer;
 				clientMessageHandle(client_sock,temp);
-				string stringLog = "[";
-				stringLog += currentDateTime();
-				stringLog += "]||";				
-				stringLog += temp;
-				createLog(stringLog);
+				createLog(temp);
 			}
 			kunci.unlock();
 		}
@@ -123,11 +117,65 @@ void clientHandle(int client_sock){
 }
 
 void createLog(string str){
+	string ret;
 	string path = "bin/server/file/log.txt";
 	ofstream myfile(path,ios::app);
-	myfile << str;
+	//ganti string nya -- log maker
+	ret = logMaker(str);
+	myfile << ret;
 	myfile << endl;
 	myfile.close();
+}
+
+string logMaker(string message){
+	vector<string> choppedString;
+	string ret;
+	ret="[";
+	ret += currentDateTime();
+	ret +="] ";
+	protocolDissambler(message,choppedString);
+	if(choppedString[0].compare("SERVER_START")==0){
+		ret += "server start";
+	}
+	else if (choppedString[0].compare("LIN") == 0){
+		ret += choppedString[1];
+		ret += " has logged in";
+	}
+	else if (choppedString[0].compare("REG") == 0){
+		ret += choppedString[1];
+		ret += " has registered";
+	}
+	else if (choppedString[0].compare("LOU") == 0){
+		ret += choppedString[1];
+		ret += " has logged out";
+	}
+	else if (choppedString[0].compare("JGR") == 0){
+		ret += choppedString[2];
+		ret += " has join ";
+		ret += choppedString[1];
+	}
+	else if (choppedString[0].compare("CGR") == 0){
+		ret += choppedString[1];
+		ret += " created";
+	}
+	else if (choppedString[0].compare("LGR") == 0){
+		ret += choppedString[2];
+		ret += " left ";
+		ret += choppedString[1];
+	}
+	else if (choppedString[0].compare("MSG") == 0){
+		ret += choppedString[1];
+		ret += " messaged ";
+		ret += choppedString[2];
+	}	
+	else if(choppedString[0].compare("SVR")==0){
+		ret += choppedString[1];
+		ret += " : ";		
+		ret += choppedString[2];
+		
+	}
+
+	return ret;
 }
 bool checkOnline(int client_sock){
 	bool found = false;
@@ -199,6 +247,9 @@ void clientMessageHandle(int client_sock,string message){
 void sendMessage(int client_sock,vector<string> message){
 	vector<string> temp = message;
 	vector<string> userPwd;
+	vector<string> groupUser;
+	groupUser.push_back(temp[2]);
+	groupUser.push_back(temp[1]);
 	userPwd.push_back(temp[2]);
 	userPwd.push_back("");
 	int i = 0;
@@ -221,8 +272,44 @@ void sendMessage(int client_sock,vector<string> message){
 		}
 		serverReplySuccess(client_sock);
 	}
+	else if(groupSearch(groupUser) == 1){
+		//masukin ke file yang grup, nama grup nya aja
+		//atau dibikin satu2 kaya chat ber2 biasa
+		string groupLine = retGroup(groupUser);
+		vector<string> groupVector = protocolDissambler2(groupLine);
+		vector<string> kirimPesan;
+		for (int j = 1;j < groupVector.size();j++){
+			if (groupVector[j].compare(groupUser[1]) != 0){
+				kirimPesan.push_back("GRP");
+				kirimPesan.push_back(groupUser[0]);
+				kirimPesan.push_back(groupVector[j]);
+				kirimPesan.push_back(groupUser[1]);
+				kirimPesan.push_back(temp[3]);
+				kirimPesan.push_back(temp[4]);
+				i = 0;
+				found = false;
+				while ((i < onlineClient.size()) && !found){
+					if (onlineClient[i].username.compare(groupVector[j]) == 0){
+						found = true;
+						sendMessageToClient(onlineClient[i].client_sock,protocolMaker(kirimPesan));
+					}
+					else
+						i++;
+				}
+				if (!found){
+					//user offline
+					string path = "bin/server/file/pendingMessage.txt";
+					vector<string> data = readExternalFileAutoCreate(path);
+					data.push_back(protocolMaker(kirimPesan));
+					writeExternalFile(path,data);
+				}	
+				kirimPesan.clear();
+			}
+		}
+		serverReplySuccess(client_sock);
+	}	
 	else
-		serverReplyError(client_sock,"000");
+		serverReplyError(client_sock,"004");
 }
 
 void sendMessageToClient(int client_sock,string message){
@@ -242,7 +329,7 @@ vector<string> readExternalFile(string path){
 		myfile.close();
 	}
 	else{
-		cout << "Error !" << endl;
+		cout << "Error ! cannot open file" << endl;
 	}
 	return ret;
 }
@@ -265,12 +352,44 @@ vector<string> readExternalFileAutoCreate(string path){
 		temp.push_back(fileHeader);
 		writeExternalFile(path,temp);
 		ret = readExternalFile(path);
-		cout << "Error !" << endl;
+		cout << "Error ! cannot open file" << endl;
+	}
+	return ret;
+}
+vector<string> readGroupExternalFileAutoCreate(string path){
+	string line;
+	vector<string> ret;
+	ifstream myfile(path.c_str());
+	if (myfile.is_open()){
+		while (getline(myfile,line)){
+			ret.push_back(line);
+		}
+		myfile.close();
+	}
+	else{
+		cout << "masuk sini" <<endl;
+		int find = path.find_last_of("/\\");
+		string fileHeader = "@";
+		fileHeader += path.substr(find);
+		vector<string> temp;
+		temp.push_back(fileHeader);
+		writeExternalFile(path,temp);
+		ret = readExternalFile(path);
+		cout << "Error ! cannot open file" << endl;
 	}
 	return ret;
 }
 
 void writeExternalFile(string filename,vector<string> message){
+	ofstream myfile;
+	myfile.open(filename.c_str());
+	for (int i = 0;i < message.size();i++){
+		myfile << message[i];
+		myfile << endl;
+	}
+	myfile.close();
+}
+void writeGroupExternalFile(string filename,vector<string> message){
 	ofstream myfile;
 	myfile.open(filename.c_str());
 	for (int i = 0;i < message.size();i++){
@@ -333,7 +452,7 @@ void userRegister(int client_sock,vector<string> message){
 		serverReplySuccess(client_sock);
 	}
 	else
-		serverReplyError(client_sock,"000");
+		serverReplyError(client_sock,"002");
 }
 
 void userLogin(int client_sock,vector<string> message){
@@ -350,11 +469,11 @@ void userLogin(int client_sock,vector<string> message){
 			else
 				i++;
 		}
-		vector<string> data = readExternalFile("bin/sever/file/pendingMessage.txt");
+		vector<string> data = readExternalFile("bin/server/file/pendingMessage.txt");
 		i = 1;
 		vector<string> msg;
 		while (i < data.size()){
-			protocolDissambler(data[i],msg);
+			msg = protocolDissambler2(data[i]);
 			if (temp[0].compare(msg[2])==0){
 				sendMessageToClient(client_sock,data[i]);
 				data.erase(data.begin()+i);
@@ -363,11 +482,11 @@ void userLogin(int client_sock,vector<string> message){
 				i++;
 			}
 		}
-		writeExternalFile("bin/sever/file/pendingMessage.txt",data);
+		writeExternalFile("bin/server/file/pendingMessage.txt",data);
 		serverReplySuccess(client_sock);
 	}
 	else
-		serverReplyError(client_sock,"000");
+		serverReplyError(client_sock,"001");
 }
 
 void userLogout(int client_sock,vector<string> message){
@@ -383,7 +502,7 @@ void userLogout(int client_sock,vector<string> message){
 			i++;
 	}
 	if (i == onlineClient.size()){
-		serverReplyError(client_sock,"000");
+		serverReplyError(client_sock,"001");
 	}
 }
 
@@ -415,6 +534,27 @@ int groupSearch(vector<string> group){
 	return found;
 }
 
+string retGroup(vector<string> group){
+	int found = -1;
+	string ret;
+	string temp = "bin/server/file/group.txt";
+	vector<string> data = readExternalFileAutoCreate(temp);
+	int i = 1;
+	if (data.size() > 0){
+		while ((i < data.size()) && (found == -1)){
+			vector<string> temp;
+			protocolDissambler(data[i],temp);
+			if (temp[0].compare(group[0]) == 0){
+				found = 0;
+				ret=data[i];
+			}
+			else
+				i++;
+		}
+	}
+	return ret;
+}
+
 void groupCreate(int client_sock,vector<string> message){
 	vector<string> temp = message;
 	temp.erase(temp.begin());
@@ -428,7 +568,7 @@ void groupCreate(int client_sock,vector<string> message){
 	}
 	else
 	{
-		serverReplyError(client_sock,"000");
+		serverReplyError(client_sock,"003");
 	}
 }
 
@@ -458,13 +598,20 @@ void groupJoin(int client_sock,vector<string> message){
 		serverReplySuccess(client_sock);
 	}
 	else
-		serverReplyError(client_sock,"000");
+		serverReplyError(client_sock,"003");
 }
 
 void groupLeave(int client_sock,vector<string> message){
 	vector<string> temp = message;
 	temp.erase(temp.begin());
 	if (groupSearch(temp) == 1){
+		vector<string> notif;
+		notif.push_back("MSG");
+		notif.push_back(temp[1]);
+		notif.push_back(temp[0]);
+		notif.push_back(currentDateTime());
+		notif.push_back("Has leave the group");
+		sendMessage(client_sock,notif);
 		string path = "bin/server/file/group.txt";
 		vector<string> data = readExternalFile(path);
 		int i = 1;
@@ -500,7 +647,7 @@ void groupLeave(int client_sock,vector<string> message){
 		serverReplySuccess(client_sock);
 	}
 	else
-		serverReplyError(client_sock,"000");
+		serverReplyError(client_sock,"003");
 }
 
 void serverReplySuccess(int client_sock){
@@ -519,12 +666,37 @@ void serverReplyError(int client_sock,string errorCode){
 	vector<string> message;
 	message.push_back("SVR");
 	message.push_back(errorCode);
-	message.push_back("Protocol Error!");
+	//--------------
+	message.push_back(" : ");
+	if(errorCode.compare("000")==0){
+		message.push_back("Protocol Error!");
+	}
+	else if(errorCode.compare("001")==0){
+		message.push_back("Login Error!");
+	}
+	else if(errorCode.compare("002")==0){
+		message.push_back("Registering Error!");
+	}
+	else if(errorCode.compare("003")==0){
+		message.push_back("Group Error!");
+	}
+	else if(errorCode.compare("004")==0){
+		message.push_back("Message Error!");
+	}
+	else if(errorCode.compare("200")==0){
+		message.push_back("OK");
+	}
+	else {
+		message.push_back("-");
+	}
+	//--------------
+	//message.push_back("Protocol Error!");
 	ret = protocolMaker(message);
 	cout << ret << endl;
 	bzero(buffer,buffer_size);
 	strcpy(buffer,ret.c_str());
-	len = write(client_sock,buffer,buffer_size);
+	len = write(client_sock,buffer,buffer_size);	
+	createLog(ret);
 }
 
 void protocolDissambler(string message,vector<string> & result){
@@ -539,6 +711,18 @@ void protocolDissambler(string message,vector<string> & result){
 		result.push_back(stringTemp);
 		cstr = strtok(NULL,"||");
 	}
+}
+vector<string> protocolDissambler2(string message){
+	vector<string> ret;	
+	char temp[1000];
+	strcpy(temp, message.c_str());
+	char * cstr;
+	cstr = strtok(temp, "||");
+	while (cstr != 0){
+		ret.push_back(cstr);
+		cstr = strtok(NULL, "||");
+	}
+	return ret;
 }
 
 string protocolMaker(vector<string> message){

@@ -1,0 +1,8 @@
+@fauzan-jonathan.txt
+MSG||fauzan||jonathan||2014-12-06.19:30:29||12nsdngl3k||
+MSG||fauzan||jonathan||2014-12-06.19:31:35||1234||
+MSG||fauzan||jonathan||2014-12-06.19:34:19||123456890||
+MSG||jonathan||fauzan||2014-12-06.20:37:08||hai||
+MSG||jonathan||fauzan||2014-12-06.20:37:16||adjakda||
+MSG||fauzan||jonathan||2014-12-06.20:37:30||adada||
+newmsg

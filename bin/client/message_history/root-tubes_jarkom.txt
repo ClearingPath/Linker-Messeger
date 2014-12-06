@@ -1,0 +1,4 @@
+@root-tubes_jarkom.txt
+newmsg
+MSG||root||tubes_jarkom||2014-12-06.11:32:13||1234||
+MSG||root||tubes_jarkom||2014-12-06.15:50:15||Has join the group||

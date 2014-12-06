@@ -1,4 +1,252 @@
-[2014-11-21.14:24:30]||SERVER_START||
-[2014-11-21.14:25:03]||LIN||jonathan||1234||
-[2014-11-21.14:25:06]||LOU||jonathan||
-[2014-11-21.14:27:09]||SERVER_START||
+[2014-12-06.14:51:53] server start
+[2014-12-06.14:52:01] jonathan has logged in
+[2014-12-06.14:52:03] jonathan has logged out
+[2014-12-06.14:52:42] 000 : Protocol Error!
+[2014-12-06.14:52:42] kucing has logged in
+[2014-12-06.15:27:58] server start
+[2014-12-06.15:28:07] root has logged in
+[2014-12-06.15:30:32] server start
+[2014-12-06.15:30:44] root has logged in
+[2014-12-06.15:30:55] 000 : Protocol Error!
+[2014-12-06.15:30:55] root has join tubes_jarkom
+[2014-12-06.15:31:07] 000 : Protocol Error!
+[2014-12-06.15:31:07] root left jarkom
+[2014-12-06.15:32:50] server start
+[2014-12-06.15:33:03] root has logged in
+[2014-12-06.15:33:08] 000 : Protocol Error!
+[2014-12-06.15:33:08] root has join tubes_jarkom
+[2014-12-06.15:33:15] root left tubes_jarkom
+[2014-12-06.15:33:26] root has logged out
+[2014-12-06.15:33:30] jonathan has logged in
+[2014-12-06.15:35:01] jonathan left tubes_jarkom
+[2014-12-06.15:35:07] jonathan has join tubes_jarkom
+[2014-12-06.15:44:37] server start
+[2014-12-06.15:44:47] jonathan has logged in
+[2014-12-06.15:44:52] 000 : Protocol Error!
+[2014-12-06.15:44:52] jonathan has join tubes_jarkom
+[2014-12-06.15:45:03] jonathan left tubes_jarkom
+[2014-12-06.15:45:07] jonathan has join tubes_jarkom
+[2014-12-06.15:45:07] jonathan messaged tubes_jarkom
+[2014-12-06.15:49:58] server start
+[2014-12-06.15:50:09] root has logged in
+[2014-12-06.15:50:15] root has join tubes_jarkom
+[2014-12-06.15:50:15] root messaged tubes_jarkom
+[2014-12-06.15:50:24] root left tubes_jarkom
+[2014-12-06.15:50:32] root has logged out
+[2014-12-06.15:50:37] jonathan has logged in
+[2014-12-06.15:51:01] jonathan has logged out
+[2014-12-06.15:51:06] chrestella has logged in
+[2014-12-06.18:17:51] server start
+[2014-12-06.18:18:07] jonathan has logged in
+[2014-12-06.18:19:03] jonathan has logged in
+[2014-12-06.18:20:40] 001 :  : 
+[2014-12-06.18:20:40] jonthan has logged in
+[2014-12-06.18:20:54] jonathan has logged in
+[2014-12-06.18:22:30] jonathan has logged in
+[2014-12-06.18:23:26] jonathan messaged chrestella
+[2014-12-06.18:23:35] jonathan has logged out
+[2014-12-06.18:23:43] chrestella has logged in
+[2014-12-06.18:26:23] chrestella has logged out
+[2014-12-06.18:26:45] chrestella has logged in
+[2014-12-06.18:27:04] chrestella messaged jonathan
+[2014-12-06.18:27:15] chrestella has logged out
+[2014-12-06.18:27:24] jonathan has logged in
+[2014-12-06.18:29:43] jonathan has logged in
+[2014-12-06.18:30:21] jonathan messaged chrestella
+[2014-12-06.18:30:26] jonathan has logged out
+[2014-12-06.18:30:31] chrestella has logged in
+[2014-12-06.18:34:22] root has logged in
+[2014-12-06.18:34:40] root messaged fauzan
+[2014-12-06.18:34:44] root has logged out
+[2014-12-06.18:34:50] fauzan has logged in
+[2014-12-06.18:36:26] root has logged in
+[2014-12-06.18:36:33] root messaged fauzan
+[2014-12-06.18:36:36] root has logged out
+[2014-12-06.18:36:41] fauzan has logged in
+[2014-12-06.18:37:48] jonathan has logged in
+[2014-12-06.18:37:56] jonathan has logged out
+[2014-12-06.18:38:05] fauzan has logged in
+[2014-12-06.18:38:17] fauzan messaged root
+[2014-12-06.18:38:20] fauzan has logged out
+[2014-12-06.18:38:28] root has logged in
+[2014-12-06.18:40:33] root has logged in
+[2014-12-06.18:40:40] root messaged fauzan
+[2014-12-06.18:40:42] root has logged out
+[2014-12-06.18:40:48] fauzan has logged in
+[2014-12-06.18:41:54] fauzan has logged in
+[2014-12-06.18:42:20] fauzan messaged root
+[2014-12-06.18:42:25] fauzan has logged out
+[2014-12-06.18:42:33] root has logged in
+[2014-12-06.18:44:31] fauzan has logged in
+[2014-12-06.18:44:44] fauzan messaged root
+[2014-12-06.18:44:46] fauzan has logged out
+[2014-12-06.18:44:49] root has logged in
+[2014-12-06.18:46:37] root has logged in
+[2014-12-06.18:46:45] root messaged fauzan
+[2014-12-06.18:46:51] root has logged out
+[2014-12-06.18:46:58] 001 :  : 
+[2014-12-06.18:46:58] root has logged in
+[2014-12-06.18:47:04] fauzan has logged in
+[2014-12-06.18:49:01] fauzan has logged in
+[2014-12-06.18:49:08] fauzan messaged root
+[2014-12-06.18:49:11] fauzan has logged out
+[2014-12-06.18:49:16] root has logged in
+[2014-12-06.18:50:28] fauzan has logged in
+[2014-12-06.18:50:39] fauzan messaged root
+[2014-12-06.18:56:12] jonathan has logged in
+[2014-12-06.18:56:18] jonathan messaged root
+[2014-12-06.18:56:28] root has logged in
+[2014-12-06.18:58:40] 001 :  : 
+[2014-12-06.18:58:40] rott has logged in
+[2014-12-06.18:58:44] root has logged in
+[2014-12-06.18:58:56] jonathan has logged in
+[2014-12-06.18:59:06] jonathan messaged root
+[2014-12-06.18:59:31] root messaged jonathan
+[2014-12-06.19:01:01] jonathan has logged in
+[2014-12-06.19:03:07] root has logged in
+[2014-12-06.19:03:20] root messaged jonathan
+[2014-12-06.19:03:44] jonathan messaged root
+[2014-12-06.19:06:03] root messaged chrestella
+[2014-12-06.19:06:10] jonathan messaged chrestella
+[2014-12-06.19:07:16] chrestella has logged in
+[2014-12-06.19:07:38] chrestella messaged root
+[2014-12-06.19:07:50] root has logged in
+[2014-12-06.19:10:07] jonathan has logged in
+[2014-12-06.19:10:11] jonathan messaged root
+[2014-12-06.19:10:17] jonathan messaged root
+[2014-12-06.19:10:20] jonathan messaged root
+[2014-12-06.19:10:27] root has logged in
+[2014-12-06.19:11:40] root messaged jonathan
+[2014-12-06.19:13:57] jonathan has logged in
+[2014-12-06.19:14:07] jonathan messaged root
+[2014-12-06.19:14:54] root has logged in
+[2014-12-06.19:15:25] jonathan has logged in
+[2014-12-06.19:15:31] root messaged jonathan
+[2014-12-06.19:16:25] jonathan has logged in
+[2014-12-06.19:16:54] jonathan messaged root
+[2014-12-06.19:17:10] root has logged in
+[2014-12-06.19:19:35] jonathan has logged in
+[2014-12-06.19:20:04] jonathan messaged root
+[2014-12-06.19:20:11] root has logged in
+[2014-12-06.19:21:54] jonathan has logged in
+[2014-12-06.19:22:03] 001 :  : 
+[2014-12-06.19:22:03] jonathan has logged in
+[2014-12-06.19:22:12] root has logged in
+[2014-12-06.19:22:20] root messaged jonathan
+[2014-12-06.19:22:27] jonathan messaged root
+[2014-12-06.19:26:38] jonathan has logged in
+[2014-12-06.19:26:45] root messaged jonathan
+[2014-12-06.19:26:54] jonathan messaged root
+[2014-12-06.19:27:12] chrestella has logged in
+[2014-12-06.19:27:16] chrestella messaged jonathan
+[2014-12-06.19:27:35] jonathan messaged root
+[2014-12-06.19:28:14] jonathan has logged in
+[2014-12-06.19:29:21] jonathan has logged in
+[2014-12-06.19:30:23] fauzan has logged in
+[2014-12-06.19:30:29] fauzan messaged jonathan
+[2014-12-06.19:30:37] jonathan has logged in
+[2014-12-06.19:31:31] fauzan has logged in
+[2014-12-06.19:31:35] fauzan messaged jonathan
+[2014-12-06.19:31:46] jonathan has logged in
+[2014-12-06.19:32:49] jonathan has logged in
+[2014-12-06.19:33:54] jonathan has logged in
+[2014-12-06.19:34:19] fauzan messaged jonathan
+[2014-12-06.19:34:31] fauzan has logged out
+[2014-12-06.19:34:43] ayam has registered
+[2014-12-06.19:34:49] ayam has logged in
+[2014-12-06.19:34:56] ayam messaged jonathan
+[2014-12-06.19:37:30] ayam messaged jonathan
+[2014-12-06.19:37:32] jonathan has logged in
+[2014-12-06.19:39:32] jonathan has logged in
+[2014-12-06.19:39:41] ayam messaged jonathan
+[2014-12-06.19:40:07] ayam messaged jonathan
+[2014-12-06.19:40:10] jonathan has logged out
+[2014-12-06.19:41:44] jonathan has logged in
+[2014-12-06.19:42:17] ayam messaged jonathan
+[2014-12-06.19:42:23] jonathan has logged in
+[2014-12-06.19:42:56] ayam messaged ayam
+[2014-12-06.19:43:34] ayam messaged jonathan
+[2014-12-06.19:46:13] jonathan has logged in
+[2014-12-06.19:46:19] ayam messaged jonathan
+[2014-12-06.19:46:56] ayam messaged jonathan
+[2014-12-06.19:50:05] ayam messaged jonathan
+[2014-12-06.19:50:15] jonathan has logged in
+[2014-12-06.19:51:19] ayam messaged jonathan
+[2014-12-06.19:51:27] jonathan has logged in
+[2014-12-06.19:52:19] jonathan has logged in
+[2014-12-06.19:52:24] ayam messaged jonathan
+[2014-12-06.19:52:36] ayam messaged jonathan
+[2014-12-06.20:06:32] server start
+[2014-12-06.20:06:57] chrestella has logged in
+[2014-12-06.20:07:36] tes has registered
+[2014-12-06.20:07:43] tes has logged in
+[2014-12-06.20:08:10] jonathan has logged in
+[2014-12-06.20:08:14] jonathan has logged out
+[2014-12-06.20:08:18] chrestella has logged in
+[2014-12-06.20:08:28] chrestella messaged jonathan
+[2014-12-06.20:08:34] chrestella messaged jonathan
+[2014-12-06.20:08:41] chrestella messaged jonathan
+[2014-12-06.20:08:51] tes has logged out
+[2014-12-06.20:08:57] jonathan has logged in
+[2014-12-06.20:09:58] chrestella messaged jonathan
+[2014-12-06.20:10:27] chrestella messaged jonathan
+[2014-12-06.20:10:27] chrestella messaged jonathan
+[2014-12-06.20:10:52] server start
+[2014-12-06.20:11:10] chrestella has logged in
+[2014-12-06.20:11:31] chrestella messaged jonathan
+[2014-12-06.20:11:47] chrestella messaged jonathan
+[2014-12-06.20:12:10] jonathan has logged in
+[2014-12-06.20:12:24] jonathan messaged chrestella
+[2014-12-06.20:15:44] chrestella messaged jonathan
+[2014-12-06.20:17:50] jonathan messaged chrestella
+[2014-12-06.20:19:58] server start
+[2014-12-06.20:20:11] fauzan has logged in
+[2014-12-06.20:20:20] chrestella has logged in
+[2014-12-06.20:20:29] chrestella messaged fauzan
+[2014-12-06.20:20:46] fauzan messaged chrestella
+[2014-12-06.20:21:00] chrestella messaged fauzan
+[2014-12-06.20:21:07] dasda created
+[2014-12-06.20:21:07] fauzan has join dasda
+[2014-12-06.20:21:07] fauzan messaged dasda
+[2014-12-06.20:21:24] chrestella messaged fauzan
+[2014-12-06.20:21:31] chrestella messaged fauzan
+[2014-12-06.20:21:40] fauzan messaged chrestella
+[2014-12-06.20:28:08] server start
+[2014-12-06.20:28:26] chrestella has logged in
+[2014-12-06.20:29:23] server start
+[2014-12-06.20:30:12] chrestella has logged in
+[2014-12-06.20:30:23] chrestella messaged fauzan
+[2014-12-06.20:30:28] chrestella messaged fauzan
+[2014-12-06.20:30:34] fauzan has logged in
+[2014-12-06.20:33:32] server start
+[2014-12-06.20:33:46] server start
+[2014-12-06.20:34:09] chrestella has logged in
+[2014-12-06.20:34:18] 004 :  : 
+[2014-12-06.20:34:18] chrestella messaged fauzan 
+[2014-12-06.20:34:34] 001 :  : 
+[2014-12-06.20:34:34] fauzan 1234 has logged in
+[2014-12-06.20:34:42] fauzan has logged in
+[2014-12-06.20:35:09] chrestella has logged in
+[2014-12-06.20:35:17] 004 :  : 
+[2014-12-06.20:35:17] chrestella messaged fauzan 
+[2014-12-06.20:35:28] group created
+[2014-12-06.20:35:28] fauzan has join group
+[2014-12-06.20:35:28] fauzan messaged group
+[2014-12-06.20:35:51] chrestella messaged fauzan
+[2014-12-06.20:36:07] chrestella messaged fauzan
+[2014-12-06.20:36:20] fauzan messaged chrestella
+[2014-12-06.20:37:02] jonathan has logged in
+[2014-12-06.20:37:08] jonathan messaged fauzan
+[2014-12-06.20:37:16] jonathan messaged fauzan
+[2014-12-06.20:37:22] chrestella messaged fauzan
+[2014-12-06.20:37:30] fauzan messaged jonathan
+[2014-12-06.20:40:51] tutut has registered
+[2014-12-06.20:41:06] 001 :  : 
+[2014-12-06.20:41:06] tutu has logged in
+[2014-12-06.20:41:19] tutut has logged in
+[2014-12-06.21:30:21] server start
+[2014-12-06.21:30:43] jonathan has logged in
+[2014-12-06.21:35:13] jonathan has logged in
+[2014-12-06.21:37:14] jonathan has logged in
+[2014-12-06.21:40:52] jonathan has logged in
+[2014-12-06.21:43:36] jonathan has logged in

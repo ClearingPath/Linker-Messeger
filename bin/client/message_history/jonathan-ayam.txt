@@ -1,0 +1,12 @@
+@jonathan-ayam.txt
+newmsg
+MSG||ayam||jonathan||2014-12-06.19:37:30||12345||
+MSG||ayam||jonathan||2014-12-06.19:39:41||1234||
+MSG||ayam||jonathan||2014-12-06.19:40:07||12356nykerngkerng3||
+MSG||ayam||jonathan||2014-12-06.19:42:17||kdfj2oir1oknrko12nrf||
+MSG||ayam||jonathan||2014-12-06.19:46:19||1234||
+MSG||ayam||jonathan||2014-12-06.19:46:56||ndskvnk||
+MSG||ayam||jonathan||2014-12-06.19:50:05||1234||
+MSG||ayam||jonathan||2014-12-06.19:51:19||1235||
+MSG||ayam||jonathan||2014-12-06.19:52:24||fdnb2i3nfi||
+MSG||ayam||jonathan||2014-12-06.19:52:36||ndn1o3nf2||
